@@ -11,6 +11,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Font;
@@ -25,11 +27,14 @@ public class assign1 extends Application {
     
     @Override
     public void start(Stage primaryStage) {
+
+        Image image=new Image("https://i.picsum.photos/id/480/200/200.jpg?hmac=q_kzh_8Ih85_5t_jN3rcD3npeNBLA41oDGtQZVkmmYs",200,200,true,true);
+        ImageView image1=new ImageView(image);
         
         GridPane p=new GridPane();
-        Label l1=new Label("Welcome");
-        l1.setFont(Font.font("Arial",BOLD,25));
-        p.add(l1, 0, 0);
+//        Label l1=new Label("Welcome");
+//        l1.setFont(Font.font("Arial",BOLD,25));
+        p.add(image1, 0, 0);
         p.add(new Label("Username"), 0, 1);
         p.add(new Label("Password"), 0, 2);
         p.add(new TextField(), 1, 1);
