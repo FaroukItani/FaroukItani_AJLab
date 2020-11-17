@@ -57,24 +57,9 @@ public class AJLab extends Application {
     
     @Override
     public void start(Stage primaryStage) throws FileNotFoundException {
-//        Button btn = new Button();
-//        btn.setText("Say 'Hello World'");
-//        btn.setOnAction(new EventHandler<ActionEvent>() {
-//            
-//            @Override
-//            public void handle(ActionEvent event) {
-//                System.out.println("Hello World!");
-//            }
-//        });
-//        
-//        StackPane root = new StackPane();
-//        root.getChildren().add(btn);
+
         VBox vbox=new VBox(createtext(),createIV(),createpath());
-//        Pane pane=new Pane();
-//        pane.setPadding(new Insets(5));
-//        
-//        pane.getChildren().add(createtext());
-//        pane.getChildren().add(createIV());
+
         
         Scene scene = new Scene(vbox, 300, 250);
         scene.setFill(AQUA);
