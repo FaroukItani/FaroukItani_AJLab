@@ -102,6 +102,14 @@ public class NewFXMain extends Application {
         }
         });
         PasswordField p2=new PasswordField();
+        p2.setOnAction(new EventHandler<ActionEvent>(){
+        @Override
+                public void handle(ActionEvent e){
+        Label iconfirm=new Label("Pass doesn't match");
+        if(!p1.getText().equals(p2.getText()))
+            root.add(iconfirm, 1, 14);
+        }
+        });
         ComboBox cb=new ComboBox();
         String s1="Select a country";
         String s2="Lebanon";
