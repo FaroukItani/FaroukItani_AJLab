@@ -1,0 +1,15 @@
+User Data Information
+
+Username	Password
+
+snoopy		123456
+
+scooby		a1b2c3
+
+scrappy		q1w2e3
+
+snowy		000000
+
+charlie		abcdefg
+
+lucy		pass123
